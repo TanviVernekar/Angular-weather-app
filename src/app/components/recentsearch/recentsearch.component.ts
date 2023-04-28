@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ClearAllComponent } from 'src/app/clear-all/clear-all.component';
 import { HomeService } from 'src/app/services/home.service';
 import { RecentsearchService } from 'src/app/services/recentsearch.service';
 import { WeatherAppService } from 'src/app/services/weatherapp.service';
@@ -14,7 +16,8 @@ export class RecentsearchComponent implements OnInit {
   constructor(
     public weatherAppServices: WeatherAppService,
     public homeServices: HomeService,
-    public recentsearchServices: RecentsearchService
+    public recentsearchServices: RecentsearchService,
+    public dialog: MatDialog 
   ) {}
   ngOnInit(): void {
     this.recentsearchServices.getRecentSearchCities();
@@ -33,7 +36,9 @@ export class RecentsearchComponent implements OnInit {
     this.recentsearchServices.removefromfavouriteinRecentSearchList(cityData);
   }
 
-  clearRecentSearch() {
-    this.recentsearchServices.clearRecentSearchList();
+  openDialog(): void {
+    const dialogRef = this.dialog.open(ClearAllComponent, {
+      // width: '250px',
+    });
   }
 }

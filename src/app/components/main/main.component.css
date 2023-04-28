@@ -1,4 +1,4 @@
-.homecontainer {
+.main-container {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(to right, #5d5fce, #8e4091);
@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
   }
-  .homesubconatiner {
+  .mainsubconatiner {
     height: 100vh;
     margin: 0px 7vw;
     padding: 5vh 0px;

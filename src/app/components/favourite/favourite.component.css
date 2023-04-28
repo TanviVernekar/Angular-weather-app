@@ -66,7 +66,7 @@
   height: 18px;
 }
 
-.comptext1 {
+.favcityname {
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -74,7 +74,7 @@
 
   width: 15vw;
 }
-.comptext2 {
+.favtemp {
   color: #ffffff;
   font-size: 32px;
   font-weight: 500;
@@ -83,13 +83,13 @@
   width: 5vw;
   margin-left: 3vw;
 }
-.comptext2-1 {
+.temp-cel {
   color: #ffffff;
   font-size: 16px;
   font-family: Light;
 }
 
-.comptext3 {
+.fav-descp {
   color: #ffffff;
   font-size: 20px;
   font-weight: 500;

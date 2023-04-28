@@ -18,3 +18,5 @@
     font-family: "Medium"; /*Can be any text*/
     src: url("./assets/fonts/Roboto/Roboto-Medium.ttf");
   }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
