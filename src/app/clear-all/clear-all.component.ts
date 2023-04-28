@@ -9,8 +9,8 @@ import { RecentsearchService } from 'src/app/services/recentsearch.service';
 export class ClearAllComponent {
   constructor( public recentsearchServices: RecentsearchService) { }
 
-  ngOnInit(): void {
-  }
+ 
+  ngOnInit():void{}
   clearRecentSearch() {
     this.recentsearchServices.clearRecentSearchList();
   }
