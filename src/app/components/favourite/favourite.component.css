@@ -1,8 +1,8 @@
-.main {
+.main-container {
   width: 87vw;
   height: 80vh;
 }
-.nothingdiv {
+.noFavdiv {
   display: flex;
   flex-direction: column;
   width: 87vw;

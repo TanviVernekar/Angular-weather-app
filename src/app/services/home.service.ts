@@ -25,6 +25,7 @@ export class HomeService {
     });
     localStorage.setItem('weatherDetailsList', JSON.stringify(datalist));
     this.refresh();
+    // this.refresh();
   }
 
   removefromFavourite(weatherData: any): void {
@@ -36,6 +37,9 @@ export class HomeService {
     localStorage.setItem('weatherDetails', JSON.stringify(weatherData));
     const data: any = localStorage.getItem('weatherDetailsList');
     const datalist = JSON.parse(data);
+
+
+    // const data: any = localStorage.getItem('weatherDetails');
 
     datalist.map((item: any) => {
       if (item?.data?.location?.name === weatherData?.data?.location?.name) {

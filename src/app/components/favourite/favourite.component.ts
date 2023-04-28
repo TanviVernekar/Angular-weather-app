@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-
-
-
 import { RemoveAllComponent } from 'src/app/remove-all/remove-all.component';
 import { FavouriteService } from 'src/app/services/favourite.service';
 import { HomeService } from 'src/app/services/home.service';
@@ -33,7 +30,6 @@ export class FavouriteComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(RemoveAllComponent, {
-      // width: '250px',
     });
   }
 

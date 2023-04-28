@@ -38,7 +38,6 @@ export class RecentsearchComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(ClearAllComponent, {
-      // width: '250px',
     });
   }
 }
